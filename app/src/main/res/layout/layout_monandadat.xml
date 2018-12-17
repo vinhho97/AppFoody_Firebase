@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+   <android.support.v7.widget.Toolbar
+       android:id="@+id/toolbarMonAnDaDat"
+       android:layout_width="match_parent"
+       android:layout_height="?attr/actionBarSize"
+       android:background="@color/colorPrimaryDark"
+       app:title=" "
+       >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:text="@string/DanhSachMonAnDaDat"
+           android:textColor="@color/colorWhite"
+           android:textSize="17sp"
+           android:gravity="center"
+           />
+
+   </android.support.v7.widget.Toolbar>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerMonAnDaDat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:id="@+id/txtTongTienMonAnDaDat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TongTien"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        />
+    <Button
+        android:id="@+id/btnXacNhanDatMon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/XacNhanDatMon"
+        android:textAllCaps="false"
+        android:layout_margin="5dp"
+        />
+</LinearLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:id="@+id/cardViewOdau"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/txtDiemTrungBinhQuanAn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="0"
+                android:gravity="center"
+                android:background="@drawable/background_circle"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="5dp"
+                />
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/txtTenQuanAnOdau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/txtDiaChiQuanAnOdau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txtKhoangCachQuanAnOdau"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageHinhQuanAnOdau"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:src="@drawable/hinhtest"
+            android:scaleType="centerCrop"
+            />
+        <Button
+            android:id="@+id/btnDatMonOdau"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/DatMon"
+            android:textAllCaps="false"
+            android:background="@drawable/button_radius"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="5dp"
+            android:drawableTop="@drawable/ic_local_shipping_white_24dp"
+            android:padding="5dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/containerBinhLuan1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageUser1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:src="@drawable/background"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="5dp"
+                />
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/txtTieuDeBinhLuan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Coffee House"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/txtNoiDungBinhLuan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txtChamdiem1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="5.0 "
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/containerBinhLuan2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageUser2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="6.0"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="5dp"
+                />
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/txtTieuDeBinhLuan2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/txtNoiDungBinhLuan2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txtChamdiem2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="50dp"
+            >
+            <TextView
+                android:id="@+id/txtTongBinhLuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:drawableLeft="@drawable/ic_insert_comment_black_24dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:id="@+id/txtTongHinhBinhLuan"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
+                android:padding="5dp"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_marginTop="10dp"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ThucDon"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerThucDon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+
+
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:id="@+id/txtXemMonDaDat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/XemMonAnDaDat"
+        android:layout_gravity="right"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        />
+</LinearLayout>

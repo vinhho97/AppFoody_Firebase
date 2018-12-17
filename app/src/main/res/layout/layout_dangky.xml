@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="50dp"
+        android:background="@color/transparentBackgroundDangNhap"
+        >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/foodytext"
+            />
+        <EditText
+            android:id="@+id/edEmailDK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Email"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:drawableLeft="@drawable/ic_perm_identity_white_24dp"
+            android:drawablePadding="10dp"
+            android:inputType="textEmailAddress"
+            />
+        <EditText
+            android:id="@+id/edPasswordDK"
+            android:inputType="textPassword"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_lock_outline_white_24dp"
+            android:textColorHint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/MatKhau"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/colorWhite"
+            />
+        <EditText
+            android:id="@+id/edNhapLaiPasswordDK"
+            android:inputType="textPassword"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_lock_outline_white_24dp"
+            android:textColorHint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/NhapLaiMatKhau"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/colorWhite"
+            />
+
+        <Button
+            android:id="@+id/btnDangKy"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/DangKy"
+            android:textAllCaps="false"
+            android:background="@drawable/radius_button"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:textColor="@color/colorWhite"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

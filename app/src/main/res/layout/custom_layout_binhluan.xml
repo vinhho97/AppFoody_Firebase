@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/containerBinhLuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageUser"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="6.0"
+            android:gravity="center"
+            android:src="@drawable/background"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="5dp"
+            />
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/txtTieuDeBinhLuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coffee House"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/txtNoiDungBinhLuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="91 Tân Lập 2"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtChamdiem"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="5.0 "
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerHinhBinhLuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

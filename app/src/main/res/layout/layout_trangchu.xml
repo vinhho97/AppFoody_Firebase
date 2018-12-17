@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorBackgroundTrangChu">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarTrangChu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        >
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <EditText
+                android:id="@+id/edtTimKiem"
+                android:layout_weight="1"
+                android:layout_width="200dp"
+                android:layout_height="32dp"
+                android:background="@drawable/custom_edittimkiem"
+                android:hint="@string/TimKiem"
+                android:drawableLeft="@drawable/glass"
+                android:inputType="number"
+                android:textSize="13dp"
+                android:padding="4dp"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/txtTimKiem"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="Tìm kiếm"
+                android:background="@drawable/custom_texttimkiem"
+                android:layout_marginRight="4dp"
+                android:padding="4dp"
+                android:gravity="center"
+                android:inputType="number"
+
+                />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorBackgroundTrangChu"
+            >
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/nestScrollViewOdau"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/banner_quangcao"
+                        />
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerODau"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </android.support.v7.widget.RecyclerView>
+
+                    <ProgressBar
+                        android:id="@+id/progressBarOdau"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+    
+</LinearLayout>
